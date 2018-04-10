@@ -6,17 +6,17 @@
     </head>
     <body>
     <h1>Signup</h1>
-        <form method="post">
+        <form action='/welcome' method="post">
             <label>Username
-               <input name="username" type="text" value='{{username}}' required minlength="3" maxlength="20"/>
+               <input name="username" type="text" value='{{username}}'/>
             </label>
             <br>
             <label>Password
-                <input name="password" type="password" value='{{password}}' required minlength="3" maxlength="20"/>
+                <input name="password" type="password" value='{{password}}'/>
             </label>
             <br>
             <label>Verify Password
-                <input name="verify_password" type="password" value='{{verify_password}}' required/>
+                <input name="verify_password" type="password" value='{{verify_password}}'/>
             </label>
             <br>
             <label>Email (optional)

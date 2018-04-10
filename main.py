@@ -8,8 +8,10 @@ app.config ['DEBUG']
 def index():
     return render_template('form.html')
 
-#@app.route('/inputs', methods = ['POST'])
-#def inputs():
+
+@app.route('/welcome', methods=['POST'])
+def welcome():
+
   #  username = request.form['username']                             #Define placeholders
   #  password = request.form['password']
   #  verify_password = request.form['verify_password']
@@ -19,6 +21,9 @@ def index():
   #  password_error = request.form['password_error']
   #  verify_pass_error = request.form['verify_pass_error']
   #  email_error = request.form['email_error']  
+
+    return render_template('Welcome.html')
+
 
 app.run()
     
