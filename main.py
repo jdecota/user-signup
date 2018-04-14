@@ -43,9 +43,9 @@ def valid():
 
     if ' ' in email:
         email_error = 'No spaces allowed'
-    if  email.count('@') >1:
+    if  email.count('@') != 1:
         email_error = 'Invalid Email'
-    if  email.count('.') >1:                                        
+    if  email.count('.') != 1:                                        
         email_error = 'Invalid Email'
     if  len(email) > 20:                                                          
         email_error = 'Maximum number of characters is 20'
